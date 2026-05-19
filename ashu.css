@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f7f9fc;
+    color: #1f1f1f;
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+header {
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+header nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.hero-text h1 span {
+    color: #4a6cf7;
+}
+
+.hero-text p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* Resume + Icons Section */
+.hero-actions {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn {
+    background: #4a6cf7;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* Social icons beside resume */
+.action-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.action-icons a {
+    color: #333;
+    font-size: 28px;
+    transition: 0.3s ease;
+}
+
+.action-icons a:hover {
+    color: #4a6cf7;
+    transform: scale(1.15);
+}
+
+.hero-img img {
+    width: 330px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* SECTIONS */
+.section-title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    color: #4a6cf7;
+}
+
+/* ABOUT */
+.about-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-container img {
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* SKILLS */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.skill-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* TIMELINE */
+.timeline {
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.circle {
+    width: 14px;
+    height: 14px;
+    background: #4a6cf7;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.timeline .content {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* CONTACT */
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* FOOTER */
+footer { 
+    text-align: center; 
+    padding: 30px; 
+    margin-top: 60px; 
+    background: #0d1226; 
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;           /* spacing between icons */
+}
+
+.social-links a {
+    display: inline-flex;
+    text-decoration: none;
+    border: none;
+}
+
+
+.social-links i:hover {
+    border-radius: 50px 50px;
+    transform: scale(1.15);
+}
+
+/* ✨ SCROLL ANIMATIONS */
+.fade-in,
+.slide-left,
+.slide-right {
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+/* FADE */
+.fade-in {
+    transform: translateY(30px);
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* LEFT */
+.slide-left {
+    transform: translateX(-40px);
+}
+
+.slide-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* RIGHT */
+.slide-right {
+    transform: translateX(40px);
+}
+
+.slide-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+.lnk
+{
+    color: white;
+}

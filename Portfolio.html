@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ashok – Portfolio</title>
+    <link rel="stylesheet" href="ashu.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <div class="logo">V S Ashok</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero fade-in">
+    <div class="hero-text">
+        <h1>Hello, I'm <span>Ashok</span></h1>
+        <p>Python Full Stack Developer</p>
+
+        <!-- Resume + Icons in separate section -->
+        <div class="hero-actions">
+            <a href="https://drive.google.com/drive/folders/1vT8a07LdLTYU2Od2CEiOtW_o0_CFwFIC" target="_blank">
+                <button class="btn">Resume</button>
+            </a>
+
+            <div class="action-icons">
+                <a href="https://www.linkedin.com/in/vsashok72003/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/ashuvs616-lgtm" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-img slide-right">
+        <img src="assests/me.jpg">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about fade-in">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-container">
+        <img src="assests/me.jpg" class="slide-left">
+        <div class="about-text slide-right">
+            <h3>V S Ashok</h3>
+            <p>
+                I’m a Full-Stack Python Developer focused on writing clean code &
+                building user-friendly experiences.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills fade-in">
+    <h2 class="section-title">Skills</h2>
+    <div class="skill-grid">
+        <div class="skill-card fade-in">Python</div>
+        <div class="skill-card fade-in">Django</div>
+        <div class="skill-card fade-in">SQL / MySQL</div>
+        <div class="skill-card fade-in">Angular</div>
+    </div>
+</section>
+
+<!-- WORK TIMELINE -->
+<section id="work" class="work fade-in">
+    <h2 class="section-title">My Journey</h2>
+
+    <div class="timeline">
+        <div class="timeline-item fade-in">
+            <div class="circle"></div>
+            <div class="content">
+                <h3>Python Full Stack Developer</h3>
+                <span>RoboWaves Pvt Ltd | Mar 2025 – Aug 2025</span>
+                <ul>
+                    <li>Developed REST APIs with Flask & FastAPI.</li>
+                    <li>Optimized MySQL queries and schema design.</li>
+                    <li>Built ML-based real-time systems.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-item fade-in">
+            <div class="circle"></div>
+            <div class="content">
+                <h3>AI DevOps Trainee</h3>
+                <span>Rooman Technologies | Oct 2024 – Dec 2024</span>
+                <ul>
+                    <li>CI/CD using Git, Docker, Jenkins.</li>
+                    <li>Automated deployment pipelines.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact fade-in">
+    <h2 class="section-title">Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <button class="btn">Send Message</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="social-links">
+        
+        <a href="https://www.linkedin.com/in/vsashok72003/" target="_blank" class="lnk">
+        <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100030685804019" target="_blank" class="lnk">
+        <i class="fa-brands fa-square-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/ashu7ashok/" target="_blank" class="lnk">
+        <i class="fa-brands fa-square-instagram"></i>
+        </a>
+        <a href="https://x.com/AshokVs260902" target="_blank" class="lnk">
+        <i class="fa-brands fa-square-x-twitter"></i>
+        </a>
+    
+    </div>
+    <p>© 2025 Ashok — All rights reserved.</p>
+</footer>
+
+<!-- SCROLL ANIMATION SCRIPT -->
+<script>
+    const animatedElements = document.querySelectorAll(".fade-in, .slide-left, .slide-right");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    animatedElements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
